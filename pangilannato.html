@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeybunch Sugarplum</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: "Georgia", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #5e3a3a;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #f9c2d1, #ffdde1);
+            color: #5e3a3a;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            border-bottom: 5px solid #e6a4b4;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 3px solid #e6a4b4;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        h2 {
+            color: #d65b8b;
+            font-style: italic;
+            animation: bounceIn 1.5s ease-in-out;
+        }
+
+        /* Menu Styling */
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px dashed #e6a4b4;
+            font-size: 18px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        .menu-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+            border: 2px solid #e6a4b4;
+        }
+
+        .menu-text {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #5e3a3a;
+        }
+
+        /* Button */
+        .button {
+            display: inline-block;
+            background: #d65b8b;
+            color: white;
+            padding: 12px 25px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #b3476b;
+            transition: all 0.3s ease-in-out;
+            animation: pulse 1.5s infinite;
+        }
+
+        .button:hover {
+            background: #b3476b;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 20px;
+            background: #f9c2d1;
+            color: #5e3a3a;
+            padding: 15px;
+            font-size: 14px;
+            border-top: 3px solid #e6a4b4;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 600px) {
+            .menu-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Fine Dining Restaurant
+    </header>
+
+    <div class="container">
+        <h2>Our Lovely Menu</h2>
+
+        <div class="menu-item" style="animation-delay: 0.3s;">
+            <div class="menu-text">
+
+                <span>Strawberry Shortcake</span>
+            </div>
+            <span>69.00php</span>
+        </div>
+
+        <div class="menu-item" style="animation-delay: 0.6s;">
+            <div class="menu-text">
+                 
+                <span>Pink Macarons</span>
+            </div>
+            <span>69.00php</span>
+        </div>
+
+        <div class="menu-item" style="animation-delay: 0.9s;">
+            <div class="menu-text">
+                
+                <span>Raspberry Rose Tea</span>
+            </div>
+            <span>69.00php</span>
+        </div>
+
+        <div class="menu-item" style="animation-delay: 1.2s;">
+            <div class="menu-text">
+                
+                <span>Vanilla Latte</span>
+            </div>
+            <span>69.00php</span>
+        </div>
+
+        <div class="menu-item" style="animation-delay: 1.5s;">
+            <div class="menu-text">
+                
+                <span>Heart-Shaped Cookies</span>
+            </div>
+            <span>69.00php</span>
+        </div>
+
+        <a href="#" class="button">Reserve a Table</a>
+    </div>
+
+    <div class="footer">
+        <p>📍 Location: 789 Cherry Blossom Lane, Loveville(sa likod nung bahay na green)</p>
+        <p>📞 Contact: +123 456 7869</p>
+        <p>💖 Follow us on Instagram: @honeybunch.sugarplum uwu
